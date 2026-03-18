@@ -34,10 +34,7 @@ WHERE id = 6;
 |----|-------|----------|------|----------------|
 | 6 | The Incredibles | Brad Bird | 2004 | 116 |
 
-**Explanation:**
-- `WHERE id = 6` filters the table to return only the row where the `id` column equals `6`, which gives us **The Incredibles**.
 
----
 
 ## Exercise 2: Find the movies released in the `year`s between 2000 and 2010
 
@@ -59,11 +56,7 @@ WHERE year BETWEEN 2000 AND 2010;
 | 10 | Up | Pete Docter | 2009 | 101 |
 | 11 | Toy Story 3 | Lee Unkrich | 2010 | 103 |
 
-**Explanation:**
-- `BETWEEN 2000 AND 2010` is an inclusive range filter, meaning it includes both **2000 and 2010** as valid values.
-- It's a cleaner alternative to writing `WHERE year >= 2000 AND year <= 2010`, but both approaches return the same result.
 
----
 
 ## Exercise 3: Find the movies NOT released in the `year`s between 2000 and 2010
 
@@ -83,12 +76,6 @@ WHERE year NOT BETWEEN 2000 AND 2010;
 | 13 | Brave | Brenda Chapman | 2012 | 102 |
 | 14 | Monsters University | Dan Scanlon | 2013 | 110 |
 
-Explanation:
-- `NOT BETWEEN 2000 AND 2010` is the inverse of `BETWEEN`, returning all rows where the year falls **outside** the range of 2000 to 2010.
-- It excludes both endpoints, so movies from **1999 and earlier** or **2011 and later** are returned.
-- It's equivalent to writing `WHERE year < 2000 OR year > 2010`.
-
----
 
  Exercise 4: Find the first 5 Pixar movies and their release `year`
 
